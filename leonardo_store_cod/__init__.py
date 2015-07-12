@@ -1,6 +1,5 @@
 
 from django.apps import AppConfig
-from django.utils.translation import ugettext_lazy as _
 
 default_app_config = 'leonardo_store_cod.Config'
 
@@ -12,7 +11,7 @@ LEONARDO_APPS = [
 
 class Config(AppConfig):
     name = 'leonardo_store_cod'
-    verbose_name = _("Cash on Delivery")
+    verbose_name = ("Cash on Delivery")
 
     def ready(self):
         # patch checkout app where we override the payment details view
