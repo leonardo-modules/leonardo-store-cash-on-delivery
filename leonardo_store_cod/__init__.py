@@ -18,9 +18,5 @@ class Config(AppConfig):
         from oscar.apps.checkout import app
         from cashondelivery.app import application as checkout_app
         from cashondelivery import views
-        from feincms.views.decorators import standalone
 
         app.application = checkout_app
-        # mark handle as standalone
-        views.PaymentDetailsView.handle_payment_details_submission = standalone(
-            views.PaymentDetailsView.handle_payment_details_submission)
