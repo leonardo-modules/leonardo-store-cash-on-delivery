@@ -1,2 +1,2 @@
--e git+http://github.com/michaelkuty/django-oscar-cash-on-delivery#egg=django_oscar_cash_on_delivery
+-e git+https://github.com/michaelkuty/django-oscar-cash-on-delivery#egg=django-oscar-cash-on-delivery
 leonardo-import-export

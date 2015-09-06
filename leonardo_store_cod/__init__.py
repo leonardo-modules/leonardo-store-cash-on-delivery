@@ -17,6 +17,5 @@ class Config(AppConfig):
         # patch checkout app where we override the payment details view
         from oscar.apps.checkout import app
         from cashondelivery.app import application as checkout_app
-        from cashondelivery import views
 
         app.application = checkout_app
