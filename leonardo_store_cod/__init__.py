@@ -14,8 +14,6 @@ class Config(AppConfig):
     verbose_name = ("Cash on Delivery")
 
     def ready(self):
-        # patch checkout app where we override the payment details view
-        from oscar.apps.checkout import app
-        from cashondelivery.app import application as checkout_app
 
-        app.application = checkout_app
+        # register payment method
+        from cashondelivery.methods import *
