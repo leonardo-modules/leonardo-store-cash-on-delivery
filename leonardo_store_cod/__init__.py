@@ -16,4 +16,4 @@ class Config(AppConfig):
     def ready(self):
 
         # register payment method
-        from cashondelivery.methods import *
+        from cashondelivery.methods import CashOnDeliveryPaymentMethod
